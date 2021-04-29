@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ContentChild, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private renderer: Renderer2) { }
+  @ViewChild('bergerMenu') bergerMenu!: ElementRef
+  
+  
   ngOnInit(): void {
   }
-
+  activeMenuBerger() {
+    this.renderer.addClass(this.bergerMenu.nativeElement, 'active')
+  }
+  closeMenuBerger(){
+    this.renderer.removeClass(this.bergerMenu.nativeElement, 'active')
+  }
 }

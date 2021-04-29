@@ -1,14 +1,13 @@
 //variables
-@import '../../app-variables.scss';
+@import "../../app-variables.scss";
 
 //css
-header{
+header {
     z-index: 1000;
 }
 .container-fluid {
     padding: 0;
     position: fixed;
-
 }
 .header {
     border-bottom: 1px solid $whit-smoke-color;
@@ -23,18 +22,14 @@ header{
 .nav-item {
     display: flex;
     align-items: center;
-    transition:  .5s ease-in-out;
-   &:hover .active-drop{
-    border-color: $text-color;
+    transition: 0.5s ease-in-out;
+    &:hover .active-drop {
+        border-color: $text-color;
     }
     &:hover .active-drop-down {
-       
-        transform: translate(0,-2rem);
+        transform: translate(0, -2rem);
         visibility: visible;
-     
-   
-      
-  }
+    }
 }
 .nav-link {
     color: #fff;
@@ -42,21 +37,19 @@ header{
     font-size: 0.8rem;
     padding: 0 2rem;
     height: 100%;
-   
+
     display: flex;
     align-items: center;
 
     // &:hover ~ .active-drop-down {
-       
+
     //       transform: translate(0,-2rem);
     //       visibility: visible;
-       
-     
-        
+
     // }
 }
 //link-active
-.nav-link.link-active{
+.nav-link.link-active {
     &::after {
         content: "";
         width: 0;
@@ -72,11 +65,9 @@ header{
     }
 }
 
-
 //drop-down
 
 .drop {
-   
     width: 7px;
     height: 7px;
     right: 0;
@@ -86,72 +77,72 @@ header{
 }
 //drop down list
 .drop-down-list {
- 
-    transition:  .3s ease-in-out;
-   
+    transition: 0.3s ease-in-out;
+
     visibility: hidden;
     position: absolute;
     top: 150%;
     left: -100%;
     background-color: $gray-color;
     min-width: 15.6rem;
-    &:hover{
-        transform: translate(0,-2rem);
+    &:hover {
+        transform: translate(0, -2rem);
         visibility: visible;
-      
     }
-   
 }
-//ul 
-.list-group {
-    padding: 1rem 1.5rem;
- 
+//ul
+.center-menu {
+    .list-group {
+        padding: 1rem 1.5rem;
+    }
 }
-.two-icon{
+.two-icon {
     margin-right: 2rem;
 }
 // li in ul
-.list-group-item {
-   overflow: hidden;
-    background-color: transparent;
-    color: $whit-smoke-color;
-    border: none;
-    padding:  0rem 0rem;
-    transition:all .1s ease-in-out;
-    &::after{
-        content: "";
-        width: 3rem;
-        height: 2px;
-        background-color: $whit-smoke-color;
-        position: absolute;
-        top: 50%;
-        left: -25%;
-    }
- 
-
-    &:hover{
-        padding-left: 2.2rem;
-        transform: translateX(25px);
-        &::after{
-            left: -8%;
-            background-color: $text-color;
+.center-menu {
+    .list-group-item {
+        overflow: hidden;
+        background-color: transparent;
+        color: $whit-smoke-color;
+        border: none;
+        padding: 0rem 0rem;
+        transition: all 0.1s ease-in-out;
+        &::after {
+            content: "";
+            width: 3rem;
+            height: 2px;
+            background-color: $whit-smoke-color;
+            position: absolute;
+            top: 50%;
+            left: -25%;
         }
-        //a hover
-        .link-in-drop{
-            color: $text-color;
+
+        &:hover {
+            padding-left: 2.2rem;
+            transform: translateX(25px);
+            &::after {
+                left: -8%;
+                background-color: $text-color;
+            }
+            //a hover
+            .link-in-drop {
+                color: $text-color;
+            }
         }
     }
 }
 //a in li
-.link-in-drop{
-    display: flex;
-    width: 100%;
-    padding: 1rem 0;
+.center-menu {
+    .link-in-drop {
+        display: flex;
+        width: 100%;
+        padding: 1rem 0;
 
-    cursor: pointer;
-    text-decoration: none;
-    color: $whit-smoke-color;
-  
+        cursor: pointer;
+        text-decoration: none;
+        color: $whit-smoke-color;
+    }
 }
 
 //logo
@@ -172,30 +163,80 @@ header{
     padding: 0 1rem;
 }
 //hamberger menue start
-.hamberger-menu{
+.hamberger-menu {
+    transform: translateX(20rem);
     position: fixed;
     top: 0;
     right: 0;
     width: 20rem;
     height: 100vh;
-     z-index: 1000;
+    z-index: 1000;
     background-color: $gray-color;
+    &.active{
+        transform: translateX(0) !important;
+
+    }
 }
+.berger-item {
+    position: relative;
+    padding:  0;
+    background-color: transparent;
+    border-bottom: 1px solid $gray-light-color !important;
+    
+}
+.berger-group {
+    padding: 1rem 2rem;
+   
+}
+.berger-link {
+    // font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    padding: 0.8rem 0;
+    color: $text-color;
+    transition:  .5s ease-in-out;
+    &:hover{
+        &.berger-link-drop::after{
+            transform: rotate(0.37turn);
+        }
+    }
+    &.berger-link-drop::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 0;
+        width: 8px;
+        height: 8px;
+        //border-color: $text-color;
+        transform: rotate(0.13turn);
+        border-top: 1px solid $text-color;
+        border-right: 1px solid $text-color;
+    }
+}
+.berger-close{
+padding: 2rem 2rem 1rem;
+}
+.berger-close-link{
+cursor: pointer;
+}
+.berger-close-icon{
+    width: 1.4rem;
+}
+
 //hamberger menu end
-@media (max-width:1000px){
-    .center-menu{
+@media (max-width: 1000px) {
+    .center-menu {
         display: none;
     }
-    .logo{
+    .logo {
         width: 8.1rem;
     }
-    .menu-icon{
+    .menu-icon {
         // width: 3.4rem;
-        padding: .5rem;
+        padding: 0.5rem;
     }
-    .two-icon{
-margin-right: 0;
-
+    .two-icon {
+        margin-right: 0;
     }
-
 }

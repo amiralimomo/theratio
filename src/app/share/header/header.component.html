@@ -94,7 +94,7 @@
   <!-- left menu -->
   <div class="side-menu d-flex flex-row-reverse">
     <div class="menu-bar d-flex align-items-center">
-      <img class="menu-icon " src="\assets\images\menu.png" alt="">
+     <a (click)="activeMenuBerger()"> <img class="menu-icon " src="\assets\images\menu.png" alt=""></a>
      
     </div>
     <div class="two-icon serch-and-buy d-flex align-items-center">
@@ -104,6 +104,18 @@
     </div>
   </div>
   <!-- hamberger menu start -->
-        <!-- <div class="hamberger-menu"></div> -->
+        <div #bergerMenu class="hamberger-menu ">
+         <div class="berger-close">
+           <a class="berger-close-link" (click)="closeMenuBerger()"><img class="berger-close-icon" src="/assets/images/cancel.svg" alt=""></a>
+         </div>
+          <ul class="list-group berger-group list-group-flush">
+           
+            <li class="list-group-item berger-item"><a class="berger-link berger-link-drop">home</a></li>
+            <li class="list-group-item berger-item"><a class="berger-link  berger-link-drop">home</a></li>
+            <li class="list-group-item berger-item"><a class="berger-link  berger-link-drop">home</a></li>
+            <li class="list-group-item berger-item"><a class="berger-link  berger-link-drop">home</a></li>
+            <li class="list-group-item berger-item"><a class="berger-link">home</a></li>
+          </ul>
+        </div> 
   <!-- hamberger menu end -->
 </header>
