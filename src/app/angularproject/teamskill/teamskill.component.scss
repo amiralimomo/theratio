@@ -1,0 +1,105 @@
+$color-dark: #1a1a1a;
+.team-skill {
+    padding: 6rem 0;
+    background-color: white;
+    .skill-image {
+        position: relative;
+    }
+    .skill-show {
+        .skill-title {
+        }
+        span {
+            color: #9f9e9e;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        p {
+            color: #555555;
+            line-height: 2;
+        }
+        h2 {
+            // white-space:nowrap;
+            font-size: 2.5rem;
+            margin: 1rem 0 3rem;
+        }
+    }
+}
+.ranges {
+   // overflow: hidden;
+  
+    margin: 2rem 0;
+    .range {
+        .range-title {
+            text-transform: capitalize;
+            color: $color-dark;
+            font-size: 0.9rem;
+        }
+        .range-item {
+            position: relative;
+            height: 2px;
+            margin: 0.5rem 0;
+            background-color: $color-dark;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 2px;
+                height: 10px;
+                background: #1a1a1a;
+                top: 50%;
+                right: 0;               
+                transform: translateY(-50%) skewX(-30deg);
+            }
+            span{
+                position: absolute;
+               font-size: .9rem;
+            
+              color: #1a1a1a;
+                top: -1.5rem;
+                right: 0;               
+              
+            }
+        }
+    }
+}
+// position: absolute;
+//     content: "";
+//     width: 2px;
+//     height: 10px;
+//     background: #1a1a1a;
+//     top: 50%;
+//     right: 0;
+
+//     -ms-transform: translateY(-50%) skewX(-30deg);
+//     transform: translateY(-50%) skewX(
+// -30deg
+// );
+@media (min-width: 1500px) {
+    .skill-image {
+        left: 11rem !important;
+        max-width: 46.5rem;
+    }
+}
+@media (max-width: 1480px) {
+    .skill-image {
+        position: relative;
+        left: 1rem;
+        width: 30rem;
+        height: 25rem;
+    }
+}
+@media (max-width: 995px) {
+    .container-lg {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 530px) {
+    .container-lg {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 534px) {
+    .skill-image {
+        width: 15rem;
+        height: 12rem;
+    }
+}

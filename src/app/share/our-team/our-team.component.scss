@@ -1,0 +1,90 @@
+@import '../../app-variables.scss';
+.our-team {
+    padding: 9rem 0;
+}
+.our-head {
+    text-align: center;
+    padding-bottom: 4rem;
+    span {
+        color: #9f9e9e;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 2.5rem;
+        margin: 1rem 0 3rem;
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        &::after {
+            font-size: 1.8rem;
+            content: "...........";
+            position: absolute;
+            top: 100%;
+            left: 40%;
+        }
+    }
+}
+.our-foot {
+}
+// team
+
+
+.duble-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.rate {
+    padding-top: 4rem;
+    span {
+        font-size: 2rem;
+        color: $light-whit-smoke-color;
+    }
+    h6 {
+        color: $dark-color;
+        font-size: 1.1rem;
+    }
+}
+//start items
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+.team-items{
+}
+.team-item{
+    min-height: 30px;
+    
+}
+.team-img{
+    width: 100%;
+}
+
+
+
+@media (max-width:494px){
+   
+        .team-items{
+            flex-basis: 100%;
+           
+        }
+    
+}
+@media (min-width:494px){
+   
+        .team-items{
+            flex-basis: 50%;
+           
+        }
+   
+}
+@media (min-width:920px){
+  
+        .team-items{
+            flex-basis: 20%;
+           
+        }
+   
+}
+//end items

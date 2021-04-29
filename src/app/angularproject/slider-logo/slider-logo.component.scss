@@ -1,0 +1,24 @@
+@import '../../app-variables.scss';
+
+.slider{
+    background-color: $dark-color;
+    padding: 6rem 0;
+    .slider-images{
+        overflow: hidden;
+    }
+    .ul-slider{
+        justify-content: flex-start;
+        position: relative;
+        //right: 17rem;
+        display: flex;
+        align-items: center;
+        li{ 
+            padding: 1rem;
+            margin: 0 5rem;
+        }
+    }
+    img{
+        width: 5.5rem;
+    }
+    
+}

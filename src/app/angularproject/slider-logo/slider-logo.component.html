@@ -1,0 +1,17 @@
+<section class="slider" >
+<div class="container-lg">
+    <swiper
+    [slidesPerView]="4"
+    [spaceBetween]="10"
+    (swiper)="onSwiper($event)"
+    (slideChange)="onSlideChange()"
+  >
+  <ng-container *ngFor="let slide of sliders">
+    <ng-template swiperSlide><img src="{{slide.img}}" alt="{{slide.title}}"></ng-template>
+  </ng-container>
+   
+   
+  </swiper>
+   
+</div>
+</section>

@@ -1,0 +1,84 @@
+//variable
+@import '../../app-variables.scss';
+
+//root
+
+//footer
+.footer {
+    background-color: $dark-color;
+    color: $whit-smoke-color;
+    .group {
+        padding: 6.2rem 0;
+        @media (max-width: 576px) {
+            //text-align: center;
+            padding: 6rem 0rem;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .logo-in-footer {
+        width: 9.6rem;
+        &:first-child {
+            margin-left: 0rem;
+        }
+    }
+    .group-header {
+        min-height: 4.9rem;
+        padding-bottom: 2rem;
+        h3 {
+            font-size: 1.4rem;
+        }
+    }
+
+    .social-icon {
+        margin: 0 0.5rem;
+        border: 1px solid $whit-smoke-color;
+        padding: 0.1rem 0.3rem;
+        border-radius: 90px;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            background-color: $gray-light-color;
+        }
+    }
+    .img-social-icon {
+        width: 0.8rem;
+    }
+    .img-contact-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 0.5rem;
+    }
+    .footer-link {
+        text-decoration: none;
+        color: $whit-smoke-color;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            color: $text-color;
+        }
+    }
+    .under-footer {
+        color: $whit-smoke-color;
+        a {
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+            &:hover {
+                color: $text-color;
+            }
+        }
+        padding: 1rem 0;
+        .footer-privacy {
+         
+            a:first-child {
+                border-right: 1px solid $whit-smoke-color;
+                margin-right: 1.5rem;
+                padding-right: 1.5rem;
+            }
+        }
+    }
+    hr {
+        background-color: $whit-smoke-color;
+    }
+}

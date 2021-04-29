@@ -1,0 +1,48 @@
+<section class="main d-flex align-items-center">
+    <div class="container d-flex justify-content-center  flex-wrap ">
+        <div class="form-card flex-fill ">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmitLoginForm()">
+                <div class="form-title ">
+                    <h3>Login</h3>
+                    <span>
+                        If you an account Login here</span>
+                </div>
+                <div> <input type="text" formControlName="email"  placeholder="Enter Your Email"></div>
+                <div> <input type="password" formControlName="password"  placeholder="Enter Your Password"></div>
+                <div class="checkdiv">
+                    <label>Remember Me</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <button [disabled]="!loginForm.valid" class="btn login-form-btn for">Login</button>
+                </div>
+                <!-- <div formArrayName="refrences">
+                    <p *ngFor="let ref of refrebcescontroll"></p>
+                </div> -->
+            </form>
+           
+        </div>
+        <div class="form-card flex-fill order-1">
+            <form [formGroup]="registerForm" (submit)="onSubmitRegisterForm()">
+
+                <div class="form-title">
+                    <h3>Register</h3>
+                    <span> If you do not have an account, fill out the form below</span>
+                    
+                </div>
+                <div>
+                    <input type="text" formControlName="email"  placeholder="Enter Your Email">
+                </div>
+                <div>
+                    <input type="password" formControlName="password"  placeholder="Enter Your Password">
+                </div>
+                <div >
+                    <input type="password" formControlName="repassword"  placeholder="Enter Your Password again">
+                </div>
+                <div>
+                    <button [disabled]="!registerForm.valid"  class="btn login-form-btn ">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,56 @@
+@import "../../app-variables.scss";
+.testimonials {
+    background-color: #fff;
+}
+.imonials {
+    padding: 4rem 0;
+}
+.our-head {
+    text-align: center;
+    padding-bottom: 4rem;
+    span {
+        color: #9f9e9e;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 2.5rem;
+        margin: 1rem 0 3rem;
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        &::after {
+            font-size: 1.8rem;
+            content: "...........";
+            position: absolute;
+            top: 100%;
+            left: 40%;
+        }
+    }
+}
+.user-cart {
+    padding: 1rem;
+    margin: 1rem 2rem;
+}
+.cart-dis {
+    box-shadow:20px 20px 0px 0px $color-6f;
+    padding: 2rem ;
+    width: 17rem;
+    margin-bottom: 3rem;
+    border: 1px solid $gray-light-color-hash;
+    p {
+        line-height: 2;
+        font-size: 1.1rem;
+        color: $color-6f;
+    }
+}
+.user-card-title {
+    padding-left: 2rem;
+    span {
+        color: $color-6f;
+        font-size: 1.1rem;
+    }
+    h6 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,38 @@
+.page-header{
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/pheader-team.jpg');
+    background-size:auto 102%;
+    background-position: bottom;
+    color: #fff;
+    .container{
+        padding: 10rem 0;
+        text-align: center;
+    }
+    .head-in-headpage{
+        text-transform: capitalize;
+        font-size: 3.5rem;
+        margin-top: 5rem
+    }
+    .ul-in-headpage{
+        list-style: none;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+        padding: 0;
+        .li-in-headpage{
+       
+          margin: 0 .5rem;
+        }
+        .element-in-li{
+           
+              margin: 0 5px;
+                width: 5px;
+                height: 5px;
+                background-color: #fff;
+                border-radius: 50%;
+            
+            
+        }
+    }
+}

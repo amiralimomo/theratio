@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "amirali@gmail.com",
+      "password": "2110"
+    },
+    {
+      "id": 2,
+      "email": "mohammad@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 3,
+      "email": "sara@gmail.com",
+      "password": "0000"
+    },
+    {
+      "id": 1339,
+      "email": "jafar@gmail.com",
+      "password": "bahbah"
+    },
+    {
+      "id": 4101,
+      "email": "vvzlex@gmail.com",
+      "password": "uouo"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "image": "",
+      "title": ""
+    },
+    {
+      "id": 2,
+      "image": "",
+      "title": "123"
+    },
+    {
+      "id": 3,
+      "image": "",
+      "title": ""
+    }
+  ],
+  "team": [
+    {
+      "image": "/assets/images/team.jpg",
+      "name": "piter"
+    },
+    {
+      "image": "/assets/images/team.jpg",
+      "name": "piter"
+    },
+    {
+      "image": "/assets/images/team.jpg",
+      "name": "piter"
+    },
+    {
+      "image": "/assets/images/team.jpg",
+      "name": "piter"
+    },
+    {
+      "image": "/assets/images/team.jpg",
+      "name": "piter"
+    },
+    {
+      "image": "/assets/images/team.jpg",
+      "name": "piter"
+    },
+    {
+      "image": "/assets/images/team.jpg",
+      "name": "piter"
+    },
+    {
+      "image": "/assets/images/team.jpg",
+      "name": "piter"
+    },
+    {
+      "image": "/assets/images/team.jpg",
+      "name": "piter"
+    },
+    {
+      "image": "/assets/images/team.jpg",
+      "name": "piter"
+    }
+  ],
+  "imonials":[
+    {
+      "name": "homan",
+      "dis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, corporis.Lot, corporis.",
+      "img": "./assets/images/testi3.png"
+    },
+    {
+      "name": "jak",
+      "dis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, corporis.Lot, corporis.",
+      "img": "./assets/images/testi3.png"
+    },
+    {
+      "name": "octane",
+      "dis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, corporis.Lot, corporis.",
+      "img": "./assets/images/testi3.png"
+    },
+    {
+      "name": "david",
+      "dis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, corporis.Lot, corporis.",
+      "img": "./assets/images/testi3.png"
+    },
+    {
+      "name": "emilia",
+      "dis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, corporis.Lot, corporis.",
+      "img": "./assets/images/testi3.png"
+    },
+    {
+      "name": "rase",
+      "dis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, corporis.Lot, corporis.",
+      "img": "./assets/images/testi3.png"
+    }
+  ]
+}
