@@ -116,5 +116,11 @@
       "dis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, corporis.Lot, corporis.",
       "img": "./assets/images/testi3.png"
     }
-  ]
+  ],
+  "teamskill":{
+    "INTERIORSKETCH":65,
+    "MODELING":95,
+    "PLANNING":55,
+    "INTERIORDESIGN":75
+  }
 }

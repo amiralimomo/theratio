@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-
+import {TeamSkillService}from './app-teamskill.service'
 @Component({
   selector: 'app-teamskill',
   templateUrl: './teamskill.component.html',
@@ -7,16 +7,26 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 })
 export class TeamskillComponent implements OnInit, AfterViewInit {
 
-  constructor() { }
+  constructor(private teamSkillService:TeamSkillService) { }
   
-  INTERIORSKETCH: number = 65
-  MODELING: number = 95
-  PLANNING: number = 55
-  INTERIORDESIGN: number = 75
+  INTERIORSKETCH!: number 
+  MODELING!: number 
+  PLANNING!: number 
+  INTERIORDESIGN!: number 
   ngOnInit(): void {
+    this.getSkillData()
   }
   ngAfterViewInit(): void {
 
+  }
+  getSkillData(){
+    this.teamSkillService.getSkillData().subscribe(data=>{
+    //  this.INTERIORSKETCH=data.
+   this.INTERIORSKETCH=data.INTERIORSKETCH
+   this.MODELING=data.MODELING
+   this.PLANNING=data.PLANNING
+   this.INTERIORDESIGN=data.INTERIORDESIGN
+    })
   }
 
 }

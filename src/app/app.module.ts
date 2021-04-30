@@ -16,7 +16,7 @@ import { TestimonialsComponent } from './angularproject/testimonials/testimonial
 import { SwiperModule } from 'swiper/angular';
 import {ImonialsService} from './angularproject/testimonials/app-imonials.service'
 import {TeamService}from './share/our-team/app-ourteam.service'
-
+import {TeamSkillService} from './angularproject/teamskill/app-teamskill.service'
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import {TeamService}from './share/our-team/app-ourteam.service'
     HttpClientModule,
     SwiperModule
   ],
-  providers: [UserService,ImonialsService,TeamService],
+  providers: [UserService,ImonialsService,TeamService,TeamSkillService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

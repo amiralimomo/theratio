@@ -2,9 +2,7 @@
 @import "../../app-variables.scss";
 
 //css
-header {
-    z-index: 1000;
-}
+
 .container-fluid {
     padding: 0;
     position: fixed;
@@ -12,6 +10,10 @@ header {
 .header {
     border-bottom: 1px solid $whit-smoke-color;
     color: $text-color;
+    z-index: 1000;
+}
+.dark-mode{
+background-color: $gray-color;
 }
 //menu
 .center-menu {
@@ -172,9 +174,10 @@ header {
     height: 100vh;
     z-index: 1000;
     background-color: $gray-color;
+    transition: 0.3s ease-in-out;
     &.active{
         transform: translateX(0) !important;
-
+      
     }
 }
 .berger-item {
