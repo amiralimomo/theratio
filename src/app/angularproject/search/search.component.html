@@ -4,13 +4,19 @@
         <h2 class="h2-in-head">search your item</h2>
         <div class="mt-4">
             <form [formGroup]="searchForm" (ngSubmit)="searchItem()" class="d-flex search-form">
-              <input formControlName="search"  type="text" class="search-input flex-grow-1">
-              <button class="search-btn"><img class="search-icon" src="/assets/images/search.png" alt=""></button>
-
+                <input formControlName="search" type="text" class="search-input flex-grow-1">
+                <button class="search-btn"><img class="search-icon" src="/assets/images/search.png" alt=""></button>
             </form>
         </div>
     </div>
     <app-our-team [searchPar]="searchPar"></app-our-team>
 </section>
+
+
+
+
+
+
+
 
 <app-footer></app-footer>

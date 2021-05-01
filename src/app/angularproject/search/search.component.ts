@@ -10,6 +10,7 @@ export class SearchComponent implements OnInit {
   searchPar!:string
   constructor(private fb: FormBuilder) { }
 
+
   initialaizeSearchForm(): void {
     this.searchForm = this.fb.group({
       'search': new FormControl('')

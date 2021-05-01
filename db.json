@@ -130,13 +130,88 @@
       "price":1200
     },
     {
-      "name":"title-2",
-      "image":"/assets/images/item-image.jpg",
+      "name":"phone",
+      "image":"/assets/images/phone.jpg",
       "price":200
     },
     {
-      "name":"title-3",
-      "image":"/assets/images/item-image.jpg",
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"tree",
+      "image":"/assets/images/tree.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
+      "price":4035
+    },
+    {
+      "name":"car",
+      "image":"/assets/images/car.jpg",
       "price":4035
     }
   ]

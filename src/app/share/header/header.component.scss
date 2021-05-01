@@ -13,7 +13,8 @@
     z-index: 1000;
 }
 .dark-mode{
-background-color: $gray-color;
+background-color: $dark-color;
+transition: .5s ease-in-out;
 }
 //menu
 .center-menu {
