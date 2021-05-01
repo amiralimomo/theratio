@@ -10,6 +10,11 @@
                     <div class="team-item"><img class="team-img" src="{{item.image}}" alt="{{item.name}}"> </div>
                 </div>
              </ng-container>
+             <ng-container *ngFor="let item of filteredItems ">
+                <div class="team-items">
+                    <div class="team-item"><img class="team-img" src="{{item.image}}" alt="{{item.name}}"> </div>
+                </div>
+             </ng-container>
         </div>
     </div>
     <div class="our-foot">

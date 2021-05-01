@@ -1,6 +1,7 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms'
-
+import {Router} from '@angular/router'
 import { IUser } from '../../app-user-interface'
 import { UserService } from '../../app-user.service'
 
@@ -12,11 +13,11 @@ import { UserService } from '../../app-user.service'
 export class LoginComponent implements OnInit {
   //variables
   users: IUser[] = []
-  invaiteUser: boolean = false
+ 
   @Output() invaite = new EventEmitter<boolean>()
   registerForm!: FormGroup
   loginForm!: FormGroup
-  constructor(private fb: FormBuilder, private userService: UserService) { }
+  constructor(private fb: FormBuilder, private userService: UserService,private router:Router) { }
 
   ngOnInit(): void {
 
@@ -37,8 +38,8 @@ export class LoginComponent implements OnInit {
       ])
     })
   }
-  async onSubmitLoginForm() {
-    await this.getUsersData()
+   onSubmitLoginForm() {
+     this.getUsersData()
     this.checkUserRegisterd(this.loginForm.value.email, this.loginForm.value.password)
   }
   //register submit form
@@ -58,10 +59,10 @@ export class LoginComponent implements OnInit {
       ])
     })
   }
-  async onSubmitRegisterForm() {
+   onSubmitRegisterForm() {
     if (this.registerForm.value.password === this.registerForm.value.repassword) {
       const id = Math.floor(Math.random() * 10000)
-      await this.sendUsersData({ id: id, email: this.registerForm.value.email, password: this.registerForm.value.password })
+      this.sendUsersData({ id: id, email: this.registerForm.value.email, password: this.registerForm.value.password })
     }
     else {
       //show pass error
@@ -70,9 +71,7 @@ export class LoginComponent implements OnInit {
 
   }
   //get users  from service
-  async getUsersData() {
-    // await this.userService.usefetch('http://localhost:3000/users', 'GET')
-    //   .then(res => { this.users = res })
+   getUsersData() { 
     this.userService.getData().subscribe(
       (data) => {
         this.users = data
@@ -82,19 +81,15 @@ export class LoginComponent implements OnInit {
     )
   }
   //send user to service
-  async sendUsersData(user: IUser) {
-
-    // await this.userService.usefetch('http://localhost:3000/users',
-    //  'POST', JSON.stringify(user))
-    //   .then(res => { this.userService.currentUser=res})
+   sendUsersData(user: IUser) {
     this.userService.postData( user).subscribe(
       (data) => {
         this.userService.currentUser = data
       }
-
     )
 
-    this.emit()
+  //
+  this.router.navigate(['home'])
   }
   //check user registerd
   checkUserRegisterd(email: string, passwprd: string): void {
@@ -104,18 +99,15 @@ export class LoginComponent implements OnInit {
 
     if (finduser !== undefined) {
       this.userService.currentUser = { id: finduser.id, email: email, password: passwprd }
-      this.emit()
+      //
+      this.router.navigate(['home'])
     }
     else {
       //show error
       console.log('user not found')
     }
   }
-  //check duplicate user
-  //emit
-  emit() {
-    this.invaiteUser = true
-    this.invaite.emit(this.invaiteUser)
-  }
+
+ 
 
 }

@@ -122,5 +122,22 @@
     "MODELING":95,
     "PLANNING":55,
     "INTERIORDESIGN":75
-  }
+  },
+  "items":[
+    {
+      "name":"book",
+      "image":"/assets/images/item-image.jpg",
+      "price":1200
+    },
+    {
+      "name":"title-2",
+      "image":"/assets/images/item-image.jpg",
+      "price":200
+    },
+    {
+      "name":"title-3",
+      "image":"/assets/images/item-image.jpg",
+      "price":4035
+    }
+  ]
 }

@@ -16,8 +16,17 @@ import { TestimonialsComponent } from './angularproject/testimonials/testimonial
 import { SwiperModule } from 'swiper/angular';
 import {ImonialsService} from './angularproject/testimonials/app-imonials.service'
 import {TeamService}from './share/our-team/app-ourteam.service'
-import {TeamSkillService} from './angularproject/teamskill/app-teamskill.service'
+import {ItemService}from './share/our-team/app-item.service'
+import {TeamSkillService} from './angularproject/teamskill/app-teamskill.service';
+import { SearchComponent } from './angularproject/search/search.component';
+import { HomeComponent } from './angularproject/home/home.component'
+import {Routes,RouterModule}from '@angular/router'
 
+const routes:Routes=[
+  {path:'home',component:HomeComponent},
+  {path:'',component:LoginComponent},
+  {path:'search',component:SearchComponent}
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,16 +38,19 @@ import {TeamSkillService} from './angularproject/teamskill/app-teamskill.service
     TeamskillComponent,
         SliderLogoComponent,
         OurTeamComponent,
-        TestimonialsComponent
+        TestimonialsComponent,
+        SearchComponent,
+        HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    SwiperModule
+    SwiperModule,
+    RouterModule.forRoot(routes)
   ],
-  providers: [UserService,ImonialsService,TeamService,TeamSkillService],
+  providers: [UserService,ImonialsService,TeamService,TeamSkillService,ItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

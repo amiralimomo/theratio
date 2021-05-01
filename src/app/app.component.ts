@@ -10,8 +10,6 @@ export class AppComponent {
   constructor(private userService:UserService){}
   title = 'angularproject';
   invite:boolean=false
-  invited(e:boolean){
-  this.invite=e
-  }
+
   
 }
