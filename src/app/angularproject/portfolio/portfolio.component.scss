@@ -1,0 +1,34 @@
+@import "../../app-variables.scss";
+@import "../../app-own-head.scss";
+.portfolio{
+    background-color: $text-color;
+}
+.content{
+    padding: 9rem 0;
+}
+.navbar{
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: 600;
+}
+ .nav-link{
+     position: relative;
+    overflow: hidden;
+    margin: 0 1rem;
+   
+    &:hover {
+        &::after{
+            left: 0;
+        }
+    }
+    &::after{
+        transition: .3s ease-in-out;
+        position: absolute;
+        content: "";
+        width: 95px;
+        height: 17px;
+        bottom: 0;
+        left: -100px;
+        background-color: $hover-link-color;
+    }
+}
