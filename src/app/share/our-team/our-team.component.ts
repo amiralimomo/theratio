@@ -33,13 +33,6 @@ export class OurTeamComponent implements OnInit,AfterContentChecked {
     }
   }
 
-
-
-
-
-
-
-
   getTeam() {
     this.teamService.getItemsData().subscribe(data => {
       this.ourTeam = data

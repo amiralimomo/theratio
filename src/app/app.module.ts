@@ -7,7 +7,7 @@ import { LoginComponent } from './angularproject/login/login.component';
 import { HeaderComponent } from './share/header/header.component';
 import { FooterComponent } from './share/footer/footer.component';
 import {UserService}from'./app-user.service';
-import { PageHeaderComponent } from './angularproject/page-header/page-header.component';
+import { PageHeaderComponent } from './share/page-header/page-header.component';
 import {HttpClientModule}from '@angular/common/http'
 import { TeamskillComponent } from './angularproject/teamskill/teamskill.component';
 import { SliderLogoComponent } from './angularproject/slider-logo/slider-logo.component';
@@ -21,11 +21,13 @@ import {TeamSkillService} from './angularproject/teamskill/app-teamskill.service
 import { SearchComponent } from './angularproject/search/search.component';
 import { HomeComponent } from './angularproject/home/home.component'
 import {Routes,RouterModule}from '@angular/router'
-
+import {PageHeaderService}from './share/page-header/app-paheheader.service';
+import { PortfolioComponent } from './angularproject/portfolio/portfolio.component'
 const routes:Routes=[
   {path:'home',component:HomeComponent},
   {path:'',component:LoginComponent},
-  {path:'search',component:SearchComponent}
+  {path:'search',component:SearchComponent},
+  {path:'portfolio',component:PortfolioComponent}
 ]
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ const routes:Routes=[
         OurTeamComponent,
         TestimonialsComponent,
         SearchComponent,
-        HomeComponent
+        HomeComponent,
+        PortfolioComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,7 @@ const routes:Routes=[
     SwiperModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [UserService,ImonialsService,TeamService,TeamSkillService,ItemService],
+  providers: [UserService,ImonialsService,TeamService,TeamSkillService,ItemService,PageHeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

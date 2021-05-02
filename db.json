@@ -45,47 +45,47 @@
   ],
   "team": [
     {
-      "image": "/assets/images/team.jpg",
+      "image": "/assets/images/member2-230x300.jpg",
       "name": "piter"
     },
     {
-      "image": "/assets/images/team.jpg",
+      "image": "/assets/images/member4-230x300.jpg",
       "name": "piter"
     },
     {
-      "image": "/assets/images/team.jpg",
+      "image": "/assets/images/member5-230x300.jpg",
       "name": "piter"
     },
     {
-      "image": "/assets/images/team.jpg",
+      "image": "/assets/images/member2-230x300.jpg",
       "name": "piter"
     },
     {
-      "image": "/assets/images/team.jpg",
+      "image": "/assets/images/member6-230x300.jpg",
       "name": "piter"
     },
     {
-      "image": "/assets/images/team.jpg",
+      "image": "/assets/images/member7-230x300.jpg",
       "name": "piter"
     },
     {
-      "image": "/assets/images/team.jpg",
+      "image": "/assets/images/member8-230x300.jpg",
       "name": "piter"
     },
     {
-      "image": "/assets/images/team.jpg",
+      "image": "/assets/images/member4-230x300.jpg",
       "name": "piter"
     },
     {
-      "image": "/assets/images/team.jpg",
+      "image": "/assets/images/member9-230x300.jpg",
       "name": "piter"
     },
     {
-      "image": "/assets/images/team.jpg",
+      "image": "/assets/images/member10-230x300.jpg",
       "name": "piter"
     }
   ],
-  "imonials":[
+  "imonials": [
     {
       "name": "homan",
       "dis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, corporis.Lot, corporis.",
@@ -117,102 +117,102 @@
       "img": "./assets/images/testi3.png"
     }
   ],
-  "teamskill":{
-    "INTERIORSKETCH":65,
-    "MODELING":95,
-    "PLANNING":55,
-    "INTERIORDESIGN":75
+  "teamskill": {
+    "INTERIORSKETCH": 65,
+    "MODELING": 95,
+    "PLANNING": 55,
+    "INTERIORDESIGN": 75
   },
-  "items":[
+  "items": [
     {
-      "name":"book",
-      "image":"/assets/images/item-image.jpg",
-      "price":1200
+      "name": "benz",
+      "image": "/assets/images/benz-item-230x300.jpg",
+      "price": 1200
+    },
+   
+    {
+      "name": "benzgreen",
+      "image": "/assets/images/benzgreen-item-230x300.jpg",
+      "price": 4035
     },
     {
-      "name":"phone",
-      "image":"/assets/images/phone.jpg",
-      "price":200
+      "name": "benzyellow",
+      "image": "/assets/images/benzyellow.jpg",
+      "price": 4035
     },
     {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
+      "name": "car",
+      "image": "/assets/images/benzyellow.jpg",
+      "price": 4035
     },
     {
-      "name":"tree",
-      "image":"/assets/images/tree.jpg",
-      "price":4035
+      "name": "bmw",
+      "image": "/assets/images/bmw-item-230x300.jpg",
+      "price": 4035
     },
     {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
+      "name": "chevrolet",
+      "image": "/assets/images/chevrolet-item-230x300.jpg",
+      "price": 4035
     },
     {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
+      "name": "ferari",
+      "image": "/assets/images/ferari-item-230x300.jpg",
+      "price": 4035
     },
     {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
+      "name": "maserati",
+      "image": "/assets/images/maserati-item-230x300.jpg",
+      "price": 4035
     },
     {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
+      "name": "mazda3",
+      "image": "/assets/images/mazda3-item-230x300.jpeg",
+      "price": 4035
     },
     {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
+      "name": "porsche",
+      "image": "/assets/images/porsche-item-230x300.jpg",
+      "price": 4035
     },
     {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
+      "name": "porsche",
+      "image": "/assets/images/porsche-item-230x300.jpg",
+      "price": 4035
     },
     {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
+      "name": "porsche",
+      "image": "/assets/images/porsche-item-230x300.jpg",
+      "price": 4035
     },
     {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
+      "name": "porsche",
+      "image": "/assets/images/porsche-item-230x300.jpg",
+      "price": 4035
     },
     {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
+      "name": "porsche",
+      "image": "/assets/images/porsche-item-230x300.jpg",
+      "price": 4035
     },
     {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
-    },
-    {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
-    },
-    {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
-    },
-    {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
-    },
-    {
-      "name":"car",
-      "image":"/assets/images/car.jpg",
-      "price":4035
+      "name": "porsche",
+      "image": "/assets/images/porsche-item-230x300.jpg",
+      "price": 4035
     }
-  ]
+    
+   
+  ],
+  "home": {
+    "title": "Our Team",
+    "img": "/assets/images/pheader-team.jpg",
+    "url": "home",
+    "dis": "our team"
+  },
+  "portfolio": {
+    "title": "Portfolio Grid",
+    "img": "/assets/images/pheader-portfolio.jpg",
+    "url": "HOME",
+    "dis": "PORTFOLIO GRID"
+  }
 }

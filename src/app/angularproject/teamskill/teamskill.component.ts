@@ -13,15 +13,19 @@ export class TeamskillComponent implements OnInit, AfterViewInit {
   MODELING!: number 
   PLANNING!: number 
   INTERIORDESIGN!: number 
+  
   ngOnInit(): void {
     this.getSkillData()
+  
+   
   }
   ngAfterViewInit(): void {
-
+  
   }
+  
+  
   getSkillData(){
-    this.teamSkillService.getSkillData().subscribe(data=>{
-    //  this.INTERIORSKETCH=data.
+    this.teamSkillService.getSkillData().subscribe(data=>{  
    this.INTERIORSKETCH=data.INTERIORSKETCH
    this.MODELING=data.MODELING
    this.PLANNING=data.PLANNING

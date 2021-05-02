@@ -4,14 +4,25 @@
         <h2 class="mt-2">Meet Our Skilled Team</h2>
     </div>
     <div class="our-team-items">
-        <div class="team">
+        <div class="team">           
             <ng-container *ngFor="let item of ourTeam ">
                 <div class="team-items">
+                    <div class="img-cover">
+                        <h6>{{item.name}}</h6>
+                        <span>+</span>
+                        <span>contact</span>
+                    </div>
                     <div class="team-item"><img class="team-img" src="{{item.image}}" alt="{{item.name}}"> </div>
                 </div>
              </ng-container>
+
              <ng-container *ngFor="let item of filteredItems ">
                 <div class="team-items">
+                    <div class="img-cover">
+                        <h6>{{item.name}}</h6>
+                        <span>+</span>
+                        <span>{{item.price}}</span>
+                    </div>
                     <div class="team-item"><img class="team-img" src="{{item.image}}" alt="{{item.name}}"> </div>
                 </div>
              </ng-container>

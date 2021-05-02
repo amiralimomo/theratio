@@ -9,7 +9,26 @@
   <!-- <menu class="center-menu"> -->
   <ul class="center-menu nav justify-content-center">
     <li class="nav-item position-relative">
-      <a class="nav-link link-active" href="#">home</a>
+      <a class="nav-link " [routerLink]="['/home']" routerLinkActive="link-active">home</a>
+      <!-- dop down -->
+      <div class="drop-down-list active-drop-down">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="list-group">
+              <li class="list-group-item"><a class="link-in-drop">Lorem, ipsum.</a></li>
+              <li class="list-group-item"><a  class="link-in-drop">Lorem, ipsum dolor.</a></li>
+              <li class="list-group-item"><a  class="link-in-drop">Lorem.</a></li>
+              <li class="list-group-item"><a  class="link-in-drop"> Lorem ipsum dolor sit.</a></li>
+              <li class="list-group-item"><a  class="link-in-drop"> Lorem, ipsum.</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end dop down -->
+      <div class="drop active-drop position-absolute" ></div>
+    </li>
+    <li class="nav-item position-relative">
+      <a class="nav-link "  [routerLink]="['/search']" routerLinkActive="link-active">search</a>
       <!-- dop down -->
       <div class="drop-down-list active-drop-down">
         <div class="row">
@@ -28,26 +47,7 @@
       <div class="drop active-drop position-absolute"></div>
     </li>
     <li class="nav-item position-relative">
-      <a class="nav-link " href="#">pages</a>
-      <!-- dop down -->
-      <div class="drop-down-list active-drop-down">
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="list-group">
-              <li class="list-group-item"><a class="link-in-drop">Lorem, ipsum.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop">Lorem, ipsum dolor.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop">Lorem.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop"> Lorem ipsum dolor sit.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop"> Lorem, ipsum.</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- end dop down -->
-      <div class="drop active-drop position-absolute"></div>
-    </li>
-    <li class="nav-item position-relative">
-      <a class="nav-link" href="#">blog</a>
+      <a class="nav-link" [routerLink]="['/portfolio']" routerLinkActive="link-active">portfolio</a>
       <!-- dop down -->
       <div class="drop-down-list active-drop-down">
         <div class="row">
