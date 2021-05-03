@@ -85,6 +85,38 @@
       "name": "piter"
     }
   ],
+  "decore":[
+    {
+      "title":"decore 1",
+      "img":"/assets/images/project1-720x720.jpg",
+      "price":"[120]"
+    },
+    {
+      "title":"decore 2",
+      "img":"/assets/images/project2-720x720.jpg",
+      "price":"[110]"
+    },
+    {
+      "title":"decore 3",
+      "img":"/assets/images/project3.jpg",
+      "price":"[130]"
+    },
+    {
+      "title":"decore 4",
+      "img":"/assets/images/project4-720x720.jpg",
+      "price":"[220]"
+    },
+    {
+      "title":"decore 5",
+      "img":"/assets/images/project5-720x720.jpg",
+      "price":"[120]"
+    },
+    {
+      "title":"decore 6",
+      "img":"/assets/images/project6-720x720.jpg",
+      "price":"[302]"
+    }
+  ],
   "imonials": [
     {
       "name": "homan",

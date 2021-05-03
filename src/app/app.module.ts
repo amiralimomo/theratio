@@ -23,6 +23,7 @@ import { HomeComponent } from './angularproject/home/home.component'
 import {Routes,RouterModule}from '@angular/router'
 import {PageHeaderService}from './share/page-header/app-paheheader.service';
 import { PortfolioComponent } from './angularproject/portfolio/portfolio.component'
+import {DecoreService}from './angularproject/portfolio/app-decore.service'
 const routes:Routes=[
   {path:'home',component:HomeComponent},
   {path:'',component:LoginComponent},
@@ -53,7 +54,7 @@ const routes:Routes=[
     SwiperModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [UserService,ImonialsService,TeamService,TeamSkillService,ItemService,PageHeaderService],
+  providers: [UserService,ImonialsService,TeamService,TeamSkillService,ItemService,PageHeaderService,DecoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
