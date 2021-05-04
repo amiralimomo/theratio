@@ -23,12 +23,14 @@ import { HomeComponent } from './angularproject/home/home.component'
 import {Routes,RouterModule}from '@angular/router'
 import {PageHeaderService}from './share/page-header/app-paheheader.service';
 import { PortfolioComponent } from './angularproject/portfolio/portfolio.component'
-import {DecoreService}from './angularproject/portfolio/app-decore.service'
+import {DecoreService}from './angularproject/portfolio/app-decore.service';
+import { SingleteamComponent } from './angularproject/singleteam/singleteam.component'
 const routes:Routes=[
   {path:'home',component:HomeComponent},
   {path:'',component:LoginComponent},
   {path:'search',component:SearchComponent},
-  {path:'portfolio',component:PortfolioComponent}
+  {path:'portfolio',component:PortfolioComponent},
+  {path:'singleteam',component:SingleteamComponent}
 ]
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ const routes:Routes=[
         TestimonialsComponent,
         SearchComponent,
         HomeComponent,
-        PortfolioComponent
+        PortfolioComponent,
+        SingleteamComponent
   ],
   imports: [
     BrowserModule,

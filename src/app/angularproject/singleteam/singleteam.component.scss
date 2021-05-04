@@ -1,0 +1,101 @@
+@import "../../app-variables.scss";
+.single-team {
+    background-color: white;
+}
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7rem 0;
+}
+.single-image {
+    .member-image {
+        width: 100%;
+    }
+}
+.single-info {
+    .info-card {
+        background: url("/assets/images/bg1-single-team.jpg") center/cover;
+        width: 100%;
+        padding: 4rem 8rem;
+    }
+    .info-title {
+        font-size: 1.8rem;
+        color: $text-color;
+    }
+    .info-dis-span {
+        color: $text-color;
+    }
+    .question {
+        color: $text-color;
+        font-size: 1.3rem;
+    }
+    .answer {
+        color: $color-6f;
+        font-size: 1.2rem;
+    }
+}
+//icons
+.social-icons {
+    margin-top: 3rem;
+}
+.social-icon {
+    margin: 0 1rem 0 0;
+    border: 1px solid $whit-smoke-color;
+    padding: 0.1rem 0.3rem;
+    border-radius: 90px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        background-color: $gray-light-color;
+    }
+}
+.img-social-icon {
+    width: 0.9rem;
+}
+//dis
+.title{
+    color: $oneA;
+    font-size: 2rem;
+}
+.message{
+    color: $justfive;
+    line-height: 2;
+}
+
+//form
+.send-message{
+    padding: 4rem 0;
+}
+.send-input{
+    display: block;
+    padding: 1rem 2rem;
+    width: 100%;
+    border: none;
+    border-bottom:1px solid $hover-link-color ;
+    margin: 2rem 0;
+}
+@media (max-width: 765px) {
+    .info-card {
+        padding: 2rem 2rem !important;
+    }
+    .information {
+    }
+    .single-info {
+        flex-basis: 100%;
+    }
+    .single-image {
+        flex-basis: 100%;
+    }
+}
+@media (min-width: 766px) {
+    .single-info {
+        flex-basis: 65%;
+    }
+    .single-image {
+        flex-basis: 35%;
+        img {
+            position: relative;
+            left: 53px;
+            top: 22px;
+        }
+    }
+}
