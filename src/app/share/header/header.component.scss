@@ -186,11 +186,26 @@ transition: .5s ease-in-out;
     padding:  0;
     background-color: transparent;
     border-bottom: 1px solid $gray-light-color !important;
+   
+    &:hover .berger-group-drop{
+        display: block;
+    }
     
+}
+.berger-item-drop{
+    position: relative;
+    padding:  1rem 0;
+    background-color: transparent;
+    border-bottom: 1px solid $gray-light-color !important;
 }
 .berger-group {
     padding: 1rem 2rem;
    
+}
+.berger-group-drop {
+    padding: 1rem 0.5rem;
+   display: none;
+   transition: .5s ease-in-out;
 }
 .berger-link {
     // font-size: 0.9rem;
@@ -204,11 +219,12 @@ transition: .5s ease-in-out;
         &.berger-link-drop::after{
             transform: rotate(0.37turn);
         }
+      
     }
     &.berger-link-drop::after {
         position: absolute;
         content: "";
-        top: 50%;
+        top: 1rem;
         right: 0;
         width: 8px;
         height: 8px;

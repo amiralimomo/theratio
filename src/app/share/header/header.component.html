@@ -1,5 +1,5 @@
-
-<header #header (scroll)="onWindowScroll($event)" class="container-fluid header d-flex align-items-stretch justify-content-between">
+<header #header (scroll)="onWindowScroll($event)"
+  class="container-fluid header d-flex align-items-stretch justify-content-between">
   <!-- site logo -->
   <div class="logos">
     <img src="\assets\images\logo.svg" class="logo" alt="icon">
@@ -16,29 +16,29 @@
           <div class="col-md-12">
             <ul class="list-group">
               <li class="list-group-item"><a class="link-in-drop">Lorem, ipsum.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop">Lorem, ipsum dolor.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop">Lorem.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop"> Lorem ipsum dolor sit.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop"> Lorem, ipsum.</a></li>
+              <li class="list-group-item"><a class="link-in-drop">Lorem, ipsum dolor.</a></li>
+              <li class="list-group-item"><a class="link-in-drop">Lorem.</a></li>
+              <li class="list-group-item"><a class="link-in-drop"> Lorem ipsum dolor sit.</a></li>
+              <li class="list-group-item"><a class="link-in-drop"> Lorem, ipsum.</a></li>
             </ul>
           </div>
         </div>
       </div>
       <!-- end dop down -->
-      <div class="drop active-drop position-absolute" ></div>
+      <div class="drop active-drop position-absolute"></div>
     </li>
     <li class="nav-item position-relative">
-      <a class="nav-link "  [routerLink]="['/search']" routerLinkActive="link-active">search</a>
+      <a class="nav-link " [routerLink]="['/search']" routerLinkActive="link-active">search</a>
       <!-- dop down -->
       <div class="drop-down-list active-drop-down">
         <div class="row">
           <div class="col-md-12">
             <ul class="list-group">
               <li class="list-group-item"><a class="link-in-drop">Lorem, ipsum.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop">Lorem, ipsum dolor.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop">Lorem.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop"> Lorem ipsum dolor sit.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop"> Lorem, ipsum.</a></li>
+              <li class="list-group-item"><a class="link-in-drop">Lorem, ipsum dolor.</a></li>
+              <li class="list-group-item"><a class="link-in-drop">Lorem.</a></li>
+              <li class="list-group-item"><a class="link-in-drop"> Lorem ipsum dolor sit.</a></li>
+              <li class="list-group-item"><a class="link-in-drop"> Lorem, ipsum.</a></li>
             </ul>
           </div>
         </div>
@@ -54,10 +54,10 @@
           <div class="col-md-12">
             <ul class="list-group">
               <li class="list-group-item"><a class="link-in-drop">Lorem, ipsum.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop">Lorem, ipsum dolor.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop">Lorem.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop"> Lorem ipsum dolor sit.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop"> Lorem, ipsum.</a></li>
+              <li class="list-group-item"><a class="link-in-drop">Lorem, ipsum dolor.</a></li>
+              <li class="list-group-item"><a class="link-in-drop">Lorem.</a></li>
+              <li class="list-group-item"><a class="link-in-drop"> Lorem ipsum dolor sit.</a></li>
+              <li class="list-group-item"><a class="link-in-drop"> Lorem, ipsum.</a></li>
             </ul>
           </div>
         </div>
@@ -66,7 +66,7 @@
       <div class="drop active-drop position-absolute"></div>
     </li>
     <li class="nav-item position-relative">
-      <a class="nav-link "  [routerLink]="['/singleteam']" routerLinkActive="link-active">single team</a>
+      <a class="nav-link " [routerLink]="['/singleteam']" routerLinkActive="link-active">single team</a>
       <!-- dop down -->
       <!-- dop down -->
       <div class="drop-down-list active-drop-down">
@@ -74,10 +74,10 @@
           <div class="col-md-12">
             <ul class="list-group">
               <li class="list-group-item"><a class="link-in-drop">Lorem, ipsum.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop">Lorem, ipsum dolor.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop">Lorem.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop"> Lorem ipsum dolor sit.</a></li>
-              <li class="list-group-item"><a  class="link-in-drop"> Lorem, ipsum.</a></li>
+              <li class="list-group-item"><a class="link-in-drop">Lorem, ipsum dolor.</a></li>
+              <li class="list-group-item"><a class="link-in-drop">Lorem.</a></li>
+              <li class="list-group-item"><a class="link-in-drop"> Lorem ipsum dolor sit.</a></li>
+              <li class="list-group-item"><a class="link-in-drop"> Lorem, ipsum.</a></li>
             </ul>
           </div>
         </div>
@@ -95,8 +95,8 @@
   <!-- left menu -->
   <div class="side-menu d-flex flex-row-reverse">
     <div class="menu-bar d-flex align-items-center">
-     <a (click)="activeMenuBerger()"> <img class="menu-icon " src="\assets\images\menu.png" alt=""></a>
-     
+      <a (click)="activeMenuBerger()"> <img class="menu-icon " src="\assets\images\menu.png" alt=""></a>
+
     </div>
     <div class="two-icon serch-and-buy d-flex align-items-center">
 
@@ -105,21 +105,27 @@
     </div>
   </div>
   <!-- hamberger menu start -->
-        <div #bergerMenu class="hamberger-menu ">
-         <div class="berger-close">
-           <a class="berger-close-link" (click)="closeMenuBerger()"><img class="berger-close-icon" src="/assets/images/cancel.svg" alt=""></a>
-         </div>
-          <ul class="list-group berger-group list-group-flush">
-           
-            <li class="list-group-item berger-item">
-              <a class="berger-link berger-link-drop">home</a>
-             
-            </li>
-            <li class="list-group-item berger-item"><a class="berger-link  berger-link-drop">home</a></li>
-            <li class="list-group-item berger-item"><a class="berger-link  berger-link-drop">home</a></li>
-            <li class="list-group-item berger-item"><a class="berger-link  berger-link-drop">home</a></li>
-            <li class="list-group-item berger-item"><a class="berger-link">home</a></li>
-          </ul>
-        </div> 
+  <div #bergerMenu class="hamberger-menu ">
+    <div class="berger-close">
+      <a class="berger-close-link" (click)="closeMenuBerger()"><img class="berger-close-icon"
+          src="/assets/images/cancel.svg" alt=""></a>
+    </div>
+    <ul class="list-group berger-group list-group-flush">
+
+      <li class="list-group-item berger-item">
+        <a class="berger-link berger-link-drop">home</a>
+        <ul class="berger-group-drop list-group-flush list-group">
+          <li class="berger-item-drop list-group-item">drop</li>
+          <li class="berger-item-drop list-group-item">drop</li>
+          <li class="berger-item-drop list-group-item">drop</li>
+
+        </ul>
+      </li>
+      <li class="list-group-item berger-item"><a class="berger-link  berger-link-drop">search</a></li>
+      <li class="list-group-item berger-item"><a class="berger-link  berger-link-drop">portfolio</a></li>
+      <li class="list-group-item berger-item"><a class="berger-link  berger-link-drop">contact</a></li>
+      <li class="list-group-item berger-item"><a class="berger-link">service</a></li>
+    </ul>
+  </div>
   <!-- hamberger menu end -->
 </header>
